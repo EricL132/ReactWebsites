@@ -7,7 +7,6 @@ Then in project directory using terminal, you can run:
 ### `npm start`
 
 ## Project Ideas are from:
-[New tab](https://www.youtube.com/watch?v=dtKciwk_si4)  
 <a href="https://www.youtube.com/watch?v=dtKciwk_si4">YouTube</a>
 
 
