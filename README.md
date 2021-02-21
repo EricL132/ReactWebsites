@@ -1,4 +1,4 @@
-Download Repository as zip\\
+Download Repository as zip\
 Run
 ### `npm install react`
 In terminal if you don't have react installed globally
