@@ -1,4 +1,4 @@
-Download Repository as zip\
+Download Repository as zip
 ### `npm install react`
 Run terminal if you don't have react installed
 
