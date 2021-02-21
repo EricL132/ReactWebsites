@@ -1,0 +1,11 @@
+body {
+  background-image: url('./30100.jpg');
+  margin: 0;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}

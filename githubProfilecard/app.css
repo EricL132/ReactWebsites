@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #452c63;
+}
+
+.search {
+    text-align: center;
+}
+
+.searchInput {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.profile-container {
+    width: 500px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+    box-shadow: 0 5px 10px #b5b5b5b5;
+    letter-spacing: .5px;
+    height: auto;
+}
+
+.profile-container img {
+    border: 3px solid white;
+    width: 100px;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+    justify-items: center;
+}
+
+.profile-container .userInfo {
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.profile-container .infoList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 200px;
+}
+
+.profile-container .infoList li {
+    list-style: none;
+}
+
+.profile-container .infoList li i {
+    color: white;
+    margin-right: 10px;
+}
+
+.profile-container .repo-container {
+    justify-content: space-between;
+    max-width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.profile-container .repo-list {
+    list-style: none;
+    padding: .25rem .5rem;
+    margin-top: .4rem;
+    text-align: center;
+    background-color: #D8BFD8;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #452c63;
+}
