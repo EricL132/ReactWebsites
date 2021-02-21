@@ -7,7 +7,7 @@ Then in project directory using terminal, you can run:
 ### `npm start`
 
 ## Project Ideas are from:
-[link](https://www.youtube.com/watch?v=dtKciwk_si4){:target="_blank"}
-<a href="https://www.youtube.com/watch?v=dtKciwk_si4">YouTube</a>
+[link](https://www.youtube.com/watch?v=dtKciwk_si4){target="_blank"}
+
 
 
