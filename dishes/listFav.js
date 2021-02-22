@@ -12,12 +12,13 @@ class favList extends React.Component {
         this.props.removeFav(a.currentTarget.getAttribute('name'))
     }
     showInfo(e) {
+        e.stopPropagation()
         this.props.loadMealInfo(e)
     }
     render() {
         return (
             this.props.mealList.map((meals, i) => {
-                return <li mealid={meals['meals'][0]['idMeal']} onClick={this.showInfo} key={i}><img src={meals['meals'][0]['strMealThumb']} ></img><span>{meals['meals'][0]['strMeal']}</span><button name={meals['meals'][0]['idMeal']} onClick={this.removeFav} className="deleteFav"><i className="fas fa-window-close"></i></button></li>
+                return <li key={i}><img onClick={this.showInfo} mealid={meals['meals'][0]['idMeal']} src={meals['meals'][0]['strMealThumb']} ></img><span>{meals['meals'][0]['strMeal']}</span><button name={meals['meals'][0]['idMeal']} onClick={this.removeFav} className="deleteFav"><i className="fas fa-window-close"></i></button></li>
             })
         )
     }

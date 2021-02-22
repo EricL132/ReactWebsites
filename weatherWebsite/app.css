@@ -1,8 +1,6 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
+
+.weatehr-container {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -12,26 +10,26 @@ body {
     user-select: none;
 }
 
-.container {
+.weatehr-container .container {
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
 
-.searchInput {
+.weatehr-container .searchInput {
     outline: none;
     padding: .75rem 2rem;
     border-radius: 2rem;
     border: none;
 }
 
-.weatherinfo-container img {
+.weatehr-container .weatherinfo-container img {
     border-radius: 50%;
     width: 75px;
 }
 
-.weatherinfo-container {
+.weatehr-container .weatherinfo-container {
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -39,6 +37,6 @@ body {
     align-items: center;
 }
 
-.weatherinfo-container span {
+.weatehr-container .weatherinfo-container span {
     padding: 1rem;
 }

@@ -136,7 +136,7 @@ class App extends React.Component {
     }
 
     async loadMealInfo(e) {
-
+        e.stopPropagation()
         const meal = e.currentTarget.getAttribute('mealid')
         const mealInfo = await this.getMealByID(meal)
         for (var i = 0; i < 20; i++) {
@@ -152,7 +152,8 @@ class App extends React.Component {
     render() {
 
         return (
-            <>
+
+            <div className="dish-full">
                 <div className="mobile-container">
                     <header>
                         <input id="searchText" type="text"></input>
@@ -169,10 +170,10 @@ class App extends React.Component {
 
 
                     <div className="meals">
-                        <div mealid={this.state.currentRandomMeal} onClick={this.loadMealInfo} className="meal">
+                        <div className="meal">
                             <div className="meal-header">
                                 <span className="random">Random Recipe</span>
-                                <img src={this.state.randomMealImg}></img>
+                                <img mealid={this.state.currentRandomMeal} onClick={this.loadMealInfo} src={this.state.randomMealImg}></img>
                             </div>
                             <div className="meal-body">
                                 <h4>{this.state.randomMealName}</h4>
@@ -206,9 +207,9 @@ class App extends React.Component {
                         </div>
                     </div>
                     : null}
+            </div>
 
 
-            </>
         )
     }
 }

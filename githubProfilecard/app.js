@@ -31,7 +31,8 @@ class app extends React.Component {
     }
     render() {
         return (
-            <>
+     
+            <div className='git-container'>
                 <div className='search'>
                     <form onSubmit={this.getGithubUser}>
                         <input spellCheck="false" placeholder="Github username" onChange={this.handleChange} className="searchInput" value={this.state.searchInput}></input>
@@ -58,7 +59,8 @@ class app extends React.Component {
                         }
                     </div>
                 </div>
-            </>
+            </div>
+         
         )
     }
 }

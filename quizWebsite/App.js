@@ -94,7 +94,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <>
+            <div className='quiz-con'>
                 <div className='qiuz-container' id='quiz'>
                     <div className='quiz-header'>
                         <h2 id='askQ'>Question</h2>
@@ -121,7 +121,8 @@ class App extends React.Component {
                     <button onClick={this.clickedSubmit}>Submit</button>
 
                 </div>
-            </>
+            </div>
+
         )
     }
 }

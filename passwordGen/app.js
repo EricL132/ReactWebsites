@@ -47,7 +47,7 @@ class app extends React.Component {
     }
     render() {
         return (
-            <>
+            <div className='gen-container'>
                 <div className="whole-container">
                     <h2 style={{ paddingTop: '2rem' }}>Password Generator</h2>
                     <div className="password-container">
@@ -79,7 +79,7 @@ class app extends React.Component {
                         <button onClick={this.generatePass} id="generate">Generate Password</button>
                     </div>
                 </div>
-            </>
+            </div>
         )
     }
 }

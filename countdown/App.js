@@ -2,13 +2,14 @@ import './App.css';
 import React from 'react'
 let interval
 class App extends React.Component {
-  constructors() {
-    this.state = [
-    ]
+  constructor() {
+    super()
+    this.state = {finalsWeek:false}
     this.countDown = this.countDown.bind(this)
   }
 
   countDown() {
+    this.setState({finalsWeek:true})
     const newYearsDate = new Date('May 1 2021')
     const currentDate = new Date()
     const seconds = (newYearsDate - currentDate) / 1000;
@@ -20,6 +21,7 @@ class App extends React.Component {
     document.getElementById('hours').innerHTML = hours
     document.getElementById('minutes').innerHTML = minutes
     document.getElementById('seconds').innerHTML = sec
+    
   }
   componentDidMount() {
     interval = setInterval(() => {
@@ -30,28 +32,34 @@ class App extends React.Component {
     clearInterval(interval)
   }
   render() {
+    return (
+      <>
 
-    return (<>
+    {this.state.finalsWeek?
+      <div className="countdown-full">
       <h1>Finals Week</h1>
+      <h2>May 1st</h2>
       <div className="countdown-container">
         <div className="count-dm days-c">
-          <p className="big-text" id="Days">0</p>
+          <p className="big-text" id="Days"></p>
           <span>Days</span>
         </div>
         <div className="count-dm hours-c">
-          <p className="big-text" id="hours">0</p>
+          <p className="big-text" id="hours"></p>
           <span>Hours</span>
         </div>
         <div className='count-dm minutes-c'>
-          <p className='big-text' id='minutes'>0</p>
+          <p className='big-text' id='minutes'></p>
           <span>Minutes</span>
         </div>
         <div className='count-dm seconds-c'>
-          <p className='big-text' id='seconds'>0</p>
+          <p className='big-text' id='seconds'></p>
           <span>Seconds</span>
         </div>
       </div>
-    </>
+      </div>
+     : <div className="countdown-full"></div> }
+     </>
     );
   }
 }

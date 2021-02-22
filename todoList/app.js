@@ -90,7 +90,7 @@ class app extends React.Component {
     }
     render() {
         return (
-            <>
+            <div className='todo-container'>
                 <h1>todo</h1>
                 <form onSubmit={this.handleSubmit} id="form">
                     <input autoComplete="off" spellCheck="false" type="text" id="input" className="todoInput" placeholder="Enter todo"></input>
@@ -107,7 +107,7 @@ class app extends React.Component {
                 <small style={{ marginTop: "2rem" }}>Left click to mark complete</small>
                 <small>Right click to remove</small>
 
-            </>
+                </div>
         )
     }
 }

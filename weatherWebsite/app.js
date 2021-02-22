@@ -21,7 +21,7 @@ class app extends React.Component {
     }
     render() {
         return (
-            <>
+            <div className='weatehr-container'>
                 <div className='container'>
                     <form onSubmit={this.getWeatherInfo}>
                         <input placeholder="Search Location" className="searchInput"></input>
@@ -34,7 +34,7 @@ class app extends React.Component {
                         </div>
                         : null}
                 </div>
-            </>
+                </div>
         )
     }
 }

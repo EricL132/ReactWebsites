@@ -34,7 +34,8 @@ class app extends React.Component {
     }
     render() {
         return (
-            <>
+
+            <div className='movieweb-container'>
                 <header>
                     <div className="search">
                         <form onSubmit={this.doSearch}>
@@ -64,7 +65,7 @@ class app extends React.Component {
                         })}
                     </ul>
                 </div>
-            </>
+            </div>
         )
     }
 }

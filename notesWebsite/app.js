@@ -41,10 +41,9 @@ class app extends React.Component {
     }
     render() {
         return (
-            <>
+            <div className='notes-container'>
                 <button onClick={this.addNote} className="addNote"><i className="fas fa-plus"></i> Add Note</button>
                 <button onClick={this.deleteAll} style={{ top: "4rem" }} className="addNote"><i className="fas fa-minus"></i> Delete All</button>
-
                 {this.state.notes.map((htm, i) => {
                     return <div key={i} data-key={i} className='note-container'>
                         <div className='tools-container'>
@@ -60,7 +59,7 @@ class app extends React.Component {
 
                 })
                 }
-            </>
+            </div>
         )
     }
 }

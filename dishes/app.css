@@ -1,31 +1,35 @@
-body {
+
+.dish-full{
     margin: 0;
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
     min-height: 100vh;
-}
 
-.mobile-container {
+
+}
+.dish-full .mobile-container {
     width: 350px;
+    top: 10rem;
     background-color: white;
-    overflow: hidden;
+
 }
 
-img {
+.dish-full img {
     max-width: 100%;
 }
 
-header {
+.dish-full header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
 }
 
-header input {
+.dish-full header input {
     background-color: #97D9E1;
     border: none;
     border-radius: 3px;
@@ -33,7 +37,7 @@ header input {
     width: 100%;
 }
 
-header button {
+.dish-full header button {
     border: none;
     background-color: transparent;
     color: #97D9E1;
@@ -41,40 +45,47 @@ header button {
     outline: none;
 }
 
-.fav-container {
+.dish-full .fav-container {
     text-align: center;
     padding: 1rem;
-    background-color: turquoise
+    background-color: turquoise;
+
 }
 
-.fav-meals {
-    overflow-x: hidden;
+.dish-full .fav-meals {
+    overflow-x: auto;
     display: flex;
     padding: 0;
     list-style: none;
+    justify-content: space-between;
+}
+
+.dish-full .fav-meals li {
+    display: inline-flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.fav-meals li {
+    align-items: center;
     position: relative;
-    width: 92px;
+    min-width: 100px;
 }
 
-.fav-meals .deleteFav {
+.dish-full .fav-meals .deleteFav {
     position: absolute;
     top: 0;
     right: 0;
     background-color: transparent;
     border: none;
+    outline: none;
     cursor: pointer;
     opacity: 0;
 }
 
-.fav-meals li:hover .deleteFav {
+.dish-full .fav-meals li:hover .deleteFav {
     opacity: 1;
 }
 
-.fav-meals li img {
+.dish-full .fav-meals li img {
+
     border: 2px solid #ffffff;
     border-radius: 50%;
     object-fit: cover;
@@ -82,23 +93,25 @@ header button {
     width: 60px;
 }
 
-.fav-meals li span {
+.dish-full .fav-meals li span {
     overflow: hidden;
     display: inline-block;
+    outline: none;
+    border: none    ;
 }
 
-.meal {
+.dish-full .meal {
     margin: 1rem;
     box-shadow: 0 0 10px 2px #3333;
     border-radius: 3px;
     overflow: hidden;
 }
 
-.meal-header {
+.dish-full .meal-header {
     position: relative;
 }
 
-.meal-header .random {
+.dish-full .meal-header .random {
     position: absolute;
     margin-top: 20px;
     background-color: white;
@@ -107,24 +120,24 @@ header button {
     border-bottom-right-radius: 5px;
 }
 
-.meal-header img {
+.dish-full .meal-header img {
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
 
-.meal-body h4 {
+.dish-full .meal-body h4 {
     margin: 0;
 }
 
-.meal-body {
+.dish-full .meal-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
 }
 
-.meal .fav-btn {
+.dish-full .meal .fav-btn {
     background-color: transparent;
     border: none;
     font-size: 1rem;
@@ -133,11 +146,11 @@ header button {
     outline: none;
 }
 
-.meal .fav-btn.active {
+.dish-full .meal .fav-btn.active {
     color: turquoise;
 }
 
-.meal-info-container {
+.dish-full .meal-info-container {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     left: 0;
@@ -150,7 +163,7 @@ header button {
     overflow-y: hidden;
 }
 
-.meal-info {
+.dish-full .meal-info {
     background-color: white;
     border-radius: 5px;
     max-width: 400px;
@@ -162,15 +175,15 @@ header button {
     overscroll-behavior: contain
 }
 
-.meal-info::-webkit-scrollbar {
+.dish-full .meal-info::-webkit-scrollbar {
     width: 0px;
 }
 
-.meal-info h1 {
+.dish-full .meal-info h1 {
     text-align: center;
 }
 
-.meal-info .close-popup {
+.dish-full .meal-info .close-popup {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -180,6 +193,6 @@ header button {
     position: absolute;
 }
 
-.meal-info .close-popup:hover {
+.dish-full .meal-info .close-popup:hover {
     color: lightblue;
 }

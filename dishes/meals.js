@@ -9,17 +9,19 @@ class meals extends React.Component {
         this.getInfo = this.getInfo.bind(this)
     }
     getInfo(e) {
-        console.log(e)
+        e.stopPropagation()
         this.props.loadMealInfo(e)
     }
 
     render() {
         return (
-            this.props.searchResult['meals'].map((meal, i = 10) => {
+            <>
+            {this.props.searchResult['meals'] ?
+                this.props.searchResult['meals'].map((meal, i = 10) => {
 
-                return <div key={i} mealid={meal['idMeal']} onClick={this.getInfo}>
+                return <div key={i} mealid={meal['idMeal']} >
                     <div className="meal-header">
-                        <img src={meal['strMealThumb']}></img>
+                        <img mealid={meal['idMeal']} onClick={this.getInfo} src={meal['strMealThumb']}></img>
                     </div>
                     <div className="meal-body">
                         <h4>{meal['strMeal']}</h4>
@@ -28,7 +30,8 @@ class meals extends React.Component {
                 </div>
 
             })
-
+            :alert('Dish not found')}
+            </>
         )
     }
 }

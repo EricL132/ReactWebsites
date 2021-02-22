@@ -1,8 +1,5 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
+.gen-container{
     margin: 0;
     display: flex;
     justify-content: center;
@@ -12,7 +9,7 @@ body {
     background-color: #1F1E2F;
 }
 
-.whole-container {
+.gen-container .whole-container {
     background-color: #4C516D;
     width: 360px;
     height: 500px;
@@ -25,7 +22,7 @@ body {
     height: auto;
 }
 
-.password-container {
+.gen-container .password-container {
     text-align: left;
     display: inline-block;
     background-color: #1F1E2F;
@@ -36,7 +33,7 @@ body {
     overflow: hidden;
 }
 
-.copy {
+.gen-container .copy {
     float: right;
     top: 4.3rem;
     font-size: 1.25rem;
@@ -49,21 +46,21 @@ body {
     color: #eeeeee;
 }
 
-.password-container button:hover {
+.gen-container .password-container button:hover {
     color: black;
 }
 
-.password-container button:active {
+.gen-container .password-container button:active {
     transform: rotate(3deg);
 }
 
-.password-body {
+.gen-container .password-body {
     min-height: 300px;
     margin-top: 10px;
     height: auto;
 }
 
-.choice {
+.gen-container .choice {
     width: 100%;
     padding: .25rem;
     display: flex;
@@ -71,18 +68,18 @@ body {
     margin-right: 100px;
 }
 
-#length {
+.gen-container #length {
     width: 40px;
     outline: none;
     border: none;
 }
 
-#length::-webkit-outer-spin-button, #length::-webkit-inner-spin-button {
+.gen-container #length::-webkit-outer-spin-button, #length::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-#generate {
+.gen-container #generate {
     position: absolute;
     bottom: 0;
     left: 0;

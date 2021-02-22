@@ -56,7 +56,8 @@ class app extends React.Component {
     }
 
     render() {
-        return (<>
+        return (
+        <div className="drawing-container">
             <canvas onMouseDown={this.moused} onMouseMove={this.draw} width='650' height='600' id="canvas">
             </canvas>
             <div className="tools-container">
@@ -68,8 +69,8 @@ class app extends React.Component {
 
             </div>
 
-
-        </>)
+        </div>
+        )
     }
 
 

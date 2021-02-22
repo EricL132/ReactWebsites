@@ -1,0 +1,38 @@
+
+.countdown-full {
+  background: url('./backg.jpg') no-repeat center center fixed; 
+  margin: 0;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eeeeee;
+  user-select: none;
+}
+.countdown-full h1 {
+  font-size: 4rem;
+}
+
+.countdown-full .countdown-container {
+  display: inline-flex;
+}
+
+.countdown-full .big-text {
+  line-height: 1;
+  font-size: 5rem;
+  margin: -1rem 3rem;
+}
+
+.countdown-full .count-dm {
+  text-align: center;
+
+}
+
+.countdown-full .count-dm span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}

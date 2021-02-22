@@ -1,8 +1,5 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
+.drawing-container{
     margin: 0;
     display: flex;
     justify-content: center;
@@ -11,23 +8,22 @@ body {
     flex-direction: column;
 }
 
-#start {}
-
-canvas {
+.drawing-container canvas {
     width: 650px;
     height: 600px;
     background-color: white;
     border: 1px solid cornflowerblue;
 }
 
-.tools-container {
+.drawing-container .tools-container {
     margin-top: -4px;
     padding: 1rem;
     background-color: cornflowerblue;
     display: flex;
+    width: 650px;
 }
 
-.tools-container .size-button {
+.drawing-container .tools-container .size-button {
     width: 40px;
     height: 40px;
     background-color: white;
@@ -38,16 +34,16 @@ canvas {
     border: none;
 }
 
-.tools-container .size-button:hover {
+.drawing-container .tools-container .size-button:hover {
     background-color: black;
     color: white;
 }
 
-.tools-container .size-button:active {
+.drawing-container .tools-container .size-button:active {
     border: 1px solid cornflowerblue;
 }
 
-.tools-container span {
+.drawing-container .tools-container span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -60,7 +56,7 @@ canvas {
     margin-left: 5px;
 }
 
-#color {
+.drawing-container #color {
     outline: none;
     align-items: center;
     justify-content: center;
