@@ -6,7 +6,6 @@ Change any folder to src (Each folder is different website)\
 Then in project directory using terminal, you can run:
 ### `npm start`
 
-## Project Ideas are from:
-<a href="https://www.youtube.com/watch?v=dtKciwk_si4">YouTube</a>
+
 
 
