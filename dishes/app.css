@@ -1,0 +1,198 @@
+
+.dish-full{
+    margin: 0;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    min-height: 100vh;
+
+
+}
+.dish-full .mobile-container {
+    width: 350px;
+    top: 10rem;
+    background-color: white;
+
+}
+
+.dish-full img {
+    max-width: 100%;
+}
+
+.dish-full header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.dish-full header input {
+    background-color: #97D9E1;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.dish-full header button {
+    border: none;
+    background-color: transparent;
+    color: #97D9E1;
+    font-size: 2rem;
+    outline: none;
+}
+
+.dish-full .fav-container {
+    text-align: center;
+    padding: 1rem;
+    background-color: turquoise;
+
+}
+
+.dish-full .fav-meals {
+    overflow-x: auto;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.dish-full .fav-meals li {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 100px;
+}
+
+.dish-full .fav-meals .deleteFav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.dish-full .fav-meals li:hover .deleteFav {
+    opacity: 1;
+}
+
+.dish-full .fav-meals li img {
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+}
+
+.dish-full .fav-meals li span {
+    overflow: hidden;
+    display: inline-block;
+    outline: none;
+    border: none    ;
+}
+
+.dish-full .meal {
+    margin: 1rem;
+    box-shadow: 0 0 10px 2px #3333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.dish-full .meal-header {
+    position: relative;
+}
+
+.dish-full .meal-header .random {
+    position: absolute;
+    margin-top: 20px;
+    background-color: white;
+    padding: .25rem 1rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dish-full .meal-header img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dish-full .meal-body h4 {
+    margin: 0;
+}
+
+.dish-full .meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.dish-full .meal .fav-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: grey;
+    outline: none;
+}
+
+.dish-full .meal .fav-btn.active {
+    color: turquoise;
+}
+
+.dish-full .meal-info-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.dish-full .meal-info {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 400px;
+    max-height: 700px;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+    overflow: auto;
+    overscroll-behavior: contain
+}
+
+.dish-full .meal-info::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dish-full .meal-info h1 {
+    text-align: center;
+}
+
+.dish-full .meal-info .close-popup {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    right: 20px;
+    outline: none;
+    position: absolute;
+}
+
+.dish-full .meal-info .close-popup:hover {
+    color: lightblue;
+}

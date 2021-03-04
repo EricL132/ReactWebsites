@@ -1,0 +1,97 @@
+.whole-container{
+    background-color: #eec0c8;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.whole-container .game-container{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.whole-container .tick-box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+
+
+
+.whole-container .tick-box .fa-circle{
+    font-size:7rem !important;
+}
+
+.who-container{
+    background-color: #FFC0CB;
+    width: 400px;
+    align-self: center;
+    margin: 0 auto;
+    height: 130px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.who-container button{
+    cursor: pointer;
+    padding: .4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    outline: none;
+}
+.who-container button:active{
+    border-bottom: 2px solid black;
+}
+
+.who-container  .button-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.winner-container{
+    width: 200px;
+    height: 100px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40rem;
+
+}
+
+.winner-container span{
+    margin-top: -10px;
+}
+.restart-button{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}

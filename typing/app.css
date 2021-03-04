@@ -1,0 +1,44 @@
+.typing-whole-container{
+    height: 100vh;
+    background-color: #74535b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Info-container{
+background-color: #703140;
+width: 600px;
+height: auto;
+
+
+}
+.words-container{
+    padding: 1rem;
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Info-container span{
+    font-size:20px;
+    letter-spacing: 1px;
+}
+
+
+.typed{
+    color:brown;
+}
+.click-activate{
+
+}
+
+.speed-container{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.tools-container{
+    width: 600px;
+    
+}
