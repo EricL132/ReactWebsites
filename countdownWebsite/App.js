@@ -10,7 +10,7 @@ class App extends React.Component {
 
   countDown() {
     this.setState({finalsWeek:true})
-    const newYearsDate = new Date('May 1 2021')
+    const newYearsDate = new Date('1 1 2022')
     const currentDate = new Date()
     const seconds = (newYearsDate - currentDate) / 1000;
     const days = Math.floor(seconds / 3600 / 24)
@@ -37,8 +37,8 @@ class App extends React.Component {
 
     {this.state.finalsWeek?
       <div className="countdown-full">
-      <h1>Finals Week</h1>
-      <h2>May 1st</h2>
+      <h1>New Years</h1>
+      <h2>January 1st</h2>
       <div className="countdown-container">
         <div className="count-dm days-c">
           <p className="big-text" id="Days"></p>
