@@ -37,7 +37,7 @@ class home extends React.Component {
         return (
             <div className="whole-container">
                 <div className="home-container">
-                    <h1>Chat App</h1>
+                    <h1>Chat</h1>
                     <div className="input-containers">
                         <input spellCheck="false" onKeyPress={this.handleEnter} id="Name" placeholder="Name" className="input-fields"></input>
                     </div>

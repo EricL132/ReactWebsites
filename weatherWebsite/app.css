@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #b5b5b5b5;
+    background-color: white;
     user-select: none;
 }
 
@@ -15,9 +15,13 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+    height: 400px;
+    width: 400px;
+    background-color: #5ebb93;
 }
 
 .weatehr-container .searchInput {
+    margin-top: 50px;
     outline: none;
     padding: .75rem 2rem;
     border-radius: 2rem;

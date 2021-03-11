@@ -13,6 +13,7 @@ class chat extends React.Component {
         
     }
     componentDidMount() {
+        try{
         this.setState({name:this.props.location.state.name.charAt(0).toUpperCase() + this.props.location.state.name.slice(1)})
         this.setState({room:this.props.location.state.room.charAt(0).toUpperCase()+this.props.location.state.room.slice(1)})
         const name = this.props.location.state.name.charAt(0).toUpperCase() + this.props.location.state.name.slice(1)
@@ -35,6 +36,9 @@ class chat extends React.Component {
         socket.on('roomUsers',(users)=>{
             this.setState({users:users})
         })
+    }catch(err){
+        this.props.history.push('/')
+    }
 
     }
     handleSendMessage() {
@@ -64,7 +68,7 @@ class chat extends React.Component {
             <div className="chatwhole-container">
                 <div className="chat-container">
                     <header>
-                        <h1>Chat App</h1>
+                        <h1>Chat</h1>
                         <button onClick={this.handleleaveRoom} className="leave-chat">Leave Room</button>
                     </header>
                     <div className="room-info">
