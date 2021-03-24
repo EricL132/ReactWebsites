@@ -10,9 +10,10 @@ class app extends React.Component {
     }
     async getWeatherInfo(e) {
         e.preventDefault()
+        this.setState({weatherInfo:""})
         const location = e.target[0].value
         e.target[0].value = ''
-        const res = await fetch(`http://api.weatherstack.com/current?access_key=1d573c8b8d81381babaec6c0ac49d617&query=${location}&units=f`)
+        const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=a7706814c0714ec3972231925211103&q=${location}&aqi=no`)
         const weather = await res.json()
         if(weather.current){
             this.state.errorMessage = ""
@@ -26,16 +27,17 @@ class app extends React.Component {
         return (
             <div className='weatehr-container'>
                 <div className='container'>
-                    <form onSubmit={this.getWeatherInfo}>
+                    <form className="weather-form"onSubmit={this.getWeatherInfo}>
                         <input placeholder="Search Location" className="searchInput"></input>
+                        <button>Search</button>
                     </form>
                     {this.state.weatherInfo ?
                         <div className="weatherinfo-container">
                             <span>{this.state.weatherInfo['location']['name']}, {this.state.weatherInfo['location']['region']}</span>
-                            <img src={this.state.weatherInfo['current']['weather_icons'][0]}></img>
-                            <span className="temp">{this.state.weatherInfo['current']['weather_descriptions'][0]},    {this.state.weatherInfo['current']['temperature']}<sup>o</sup>F</span>
+                            <img src={this.state.weatherInfo['current']['condition']['icon']}></img>
+                            <span className="temp">{this.state.weatherInfo['current']['condition']['text']}, {this.state.weatherInfo['current']['temp_f']}<sup>o</sup>F</span>
                         </div>
-                        : <div style={{marginTop:'7rem',position:'absolute'}}>{this.state.errorMessage}</div>}
+                        : <div style={{marginTop:'9rem',position:'absolute'}}>{this.state.errorMessage}</div>}
                 </div>
                 </div>
         )

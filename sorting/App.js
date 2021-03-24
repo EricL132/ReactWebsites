@@ -174,19 +174,21 @@ class App extends React.Component {
                         }
                         {this.state.isQuickSort ?
                             <div className="Info-container">
-                                <span>Yellow: Pivot</span>
-                                <span>Purple: Sorted</span>
-                                <span>Red: Comparing</span>
-                                <span>Lightblue: Current Index</span>
-                                <span>Pink: Done Sorting</span>
+                                <div className="info-container-div"><div style={{backgroundColor:"yellow",minWidth:"20px",minHeight:"20px"}}></div><span>Pivot</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"#ac84c8",minWidth:"20px",minHeight:"20px"}}></div><span>Sorted</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"red",minWidth:"20px",minHeight:"20px"}}></div><span>Comparing</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"lightblue",minWidth:"20px",minHeight:"20px"}}></div><span>Current Index</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"pink",minWidth:"20px",minHeight:"20px"}}></div><span>Done Sorting</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"#63b88f",minWidth:"20px",minHeight:"20px"}}></div><span>Default</span></div>
                             </div>
                             : null}
                         {this.state.isBubbleSort ?
                             <div className="Info-container">
-                                <span>Purple: Sorted</span>
-                                <span>Lightblue: Comparing</span>
-                                <span>Yellow: Swap</span>
-                                <span>Pink: Done Sorting</span>
+                                <div className="info-container-div"><div style={{backgroundColor:"#ac84c8",minWidth:"20px",minHeight:"20px"}}></div><span>Sorted</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"lightblue",minWidth:"20px",minHeight:"20px"}}></div><span>Comparing</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"yellow",minWidth:"20px",minHeight:"20px"}}></div><span>Swap</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"pink",minWidth:"20px",minHeight:"20px"}}></div><span>Done Sorting</span></div>
+                                <div className="info-container-div"><div style={{backgroundColor:"#63b88f",minWidth:"20px",minHeight:"20px"}}></div><span>Default</span></div>
                             </div>
                             : null}
                     </div>
