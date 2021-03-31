@@ -1,6 +1,6 @@
 Download Repository as zip and extract.
-### `npm install react`
-Run in terminal if you don't have react installed
+### `install all required modules`
+
 
 Change any folder to src (Each folder is different website)\
 Then in project directory using terminal, you can run:
