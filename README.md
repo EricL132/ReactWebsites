@@ -4,7 +4,7 @@ Each folder is one project change any folders name to src
 In terminal to install required packages  
 Then run npm start to start application  
 ### `To Do List`
-1. Change from using react components to functions
+* Change from using react components to functions
 
 
 
